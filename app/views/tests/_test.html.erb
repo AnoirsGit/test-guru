@@ -1,0 +1,10 @@
+<tr>
+  <td><%= link_to test.title, test%> </td>
+  <td><%= test.level %></td>
+  <td><%= test.category.title %></td>
+  <td><%= test.questions.count %></td> 
+  <td><%= button_to 'Start', start_test_path(test) %></td>
+  <td>
+    <%= link_to t('.edit'), edit_test_path(test)%>
+    <%= link_to t('.delete'), test, method: :delete, data: { confirm: t('.confirm') }, class: 'btn btn-danger' %>
+</tr>

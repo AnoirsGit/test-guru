@@ -1,0 +1,8 @@
+<form action="/tests" method="post">
+    <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+    <label for="test-title">Title</label>
+    <input name="test[title]" id="test-title" type="text">
+    <label for="test-title">Level</label>
+    <input name="test[level]" id="test-level" type="number">
+    <input type="submit" value="Create">
+</form>

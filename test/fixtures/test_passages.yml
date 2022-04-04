@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  testLreferences: MyString
+  current_question: one
+  correct_questions: 1
+
+two:
+  user: two
+  testLreferences: MyString
+  current_question: two
+  correct_questions: 1

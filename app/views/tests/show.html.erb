@@ -1,0 +1,20 @@
+<p>
+  <strong><%= t('tests.index.title') %>: </strong>
+  <%= @test.title %>
+</p>
+
+<p>
+  <strong><%= t('tests.index.level') %>: </strong>
+  <%= @test.level %>
+</p>
+
+<p>
+  <strong><%= t('tests.index.category') %>: </strong>
+  <%= @test.category.title %>
+</p>
+  <td><%= button_to 'Start', start_test_path(test) %></td>
+
+<p><%= t('.questions') %>:</p>
+
+
+<%= render partial: 'questions/question', collection: @test.questions %>
