@@ -1,3 +1,4 @@
+
 class User < ApplicationRecord
     has_many :test_passages, dependent: :destroy
     has_many :tests, through: :test_passages

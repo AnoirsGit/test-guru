@@ -3,11 +3,11 @@
 one:
   user: one
   testLreferences: MyString
-  current_question: one
+  question: one
   correct_questions: 1
 
 two:
   user: two
   testLreferences: MyString
-  current_question: two
+  question: two
   correct_questions: 1

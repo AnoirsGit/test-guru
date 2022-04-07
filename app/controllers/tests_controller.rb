@@ -9,7 +9,7 @@ class TestsController < ApplicationController
   def index
     @tests = Test.all
   end
-
+  
   def def(_new)
     render :new
   end
