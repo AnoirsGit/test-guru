@@ -1,3 +1,14 @@
-<h1>Passing the <%= @test_passage.test.title  %><h1>
+<h1>Passing the <%= @test_passage.test.title  %></h1>
+<h2><%= @test_passage.question.body %></h2>
 
-<%= @test_passage.question.body %>
+
+<div><%= form_with url: test_passage_path(@test_passage), local: true, method: :put do |form|%>
+    <%= form.collection_check_boxes :answer_ids, @test_passage.question.answers, :id, :body, include_hidden: false do |b| %>
+        <li>
+            <%= b.check_box id: "answer_ids_#(b.object.id)" %>
+            <%= b.label %>
+        </li>
+    <% end %>
+    <%= form.submit "next" %>
+<% end %>
+</div>
